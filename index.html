@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Challenge Alura</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/responsive.css">
+    <link rel="icon" href="assets/img/logo-a.svg" type="image/x-icon">
+
+</head>
+
+<body>
+    <header class="container">
+        <img class="logo-img"  src="assets/img/logo-a.svg" alt="logo-a">
+    </header>
+
+    <main class="principal">
+
+        <section class="seccion1">
+
+            <textarea id="areaPrincipal" class="area" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="contenedorBotones">
+                <p>Solo minúsculas y sin acentos</p>
+
+                <input type="button" 
+                       class="btn-encriptar" 
+                       value="Encriptar"
+                       onclick="codificarTextoCompleto('areaPrincipal','resultado-final')" 
+                >
+                <input type="button" 
+                       class="btn-desencriptar" 
+                       value="Desencriptar"
+                       onclick="decodificarTexto('areaPrincipal','resultado-final')"
+                >
+
+            </div>
+        </section>
+
+        <section class="seccion2">
+
+            <div class="contenedor-muneco-ocultar" id="imgDer" >
+                <img class="imgDer" src="assets/img/muneco.png">
+            </div>
+
+            <div class="contenerdor-parrafo">
+                <h3 id="contenedor-h3">Ningun mensaje fue encontrado</h3>
+            </div>
+
+            <div class="contenedor-resultado">
+                <textarea id="resultado-final" placeholder="Texto encriptado o desencriptado"></textarea>
+            </div>
+
+            <div class="contenedor-copiar">
+                <!--Antes  <input type="button"="btn-copiar" value="Copiar"> -->
+                <input type="button" class="btn-copiar" value="Copiar" onclick="copiarPortapeles('resultado-final')">
+            </div>
+        </section>
+    </main>
+
+    </section>
+
+    </div>
+
+    </div>
+    </header>
+
+    <footer>
+        <p>Realizado por Yesid Rangel - Challenge: Encriptador - Programa Oracle, Next Education</p>
+
+        <img src="assets/github.svg" width="16" height="16" fill="currentColor" class="bi-github" viewBox="0 0 16 16">
+
+        <a id="github" href="https://github.com/YETY93" target="_blank"><b>Yesid Rangel</b></a>
+        - <img src="assets/linkedin.svg" width="16" height="16" fill="currentColor" class="bi-github"
+            viewBox="0 0 16 16">
+        <a id="linkedin" href="https://acortar.link/YacKuN" target="_blank">
+            <b> Yesid Rangel </b> </a>
+    </footer>
+
+    <script src="js/functions.js"></script>
+</body>
+
+</html>
